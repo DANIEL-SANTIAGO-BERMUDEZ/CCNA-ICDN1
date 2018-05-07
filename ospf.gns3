@@ -1,0 +1,264 @@
+{
+    "auto_start": false,
+    "name": "ospf",
+    "project_id": "82f4b289-3033-441a-b696-7055e8cf0606",
+    "revision": 8,
+    "topology": {
+        "computes": [
+            {
+                "compute_id": "local",
+                "host": "127.0.0.1",
+                "name": "Local",
+                "port": 3080,
+                "protocol": "http"
+            }
+        ],
+        "drawings": [],
+        "links": [
+            {
+                "link_id": "c12c1c35-db30-4e02-856c-87db92b3cce5",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "a8022702-2ba0-4b5e-9623-c4060636c314",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "c10a2ab7-92b3-446f-be15-346bd9eb7992",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "7ea75f7e-5f26-43d9-a49a-e92632044ec7",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "c10a2ab7-92b3-446f-be15-346bd9eb7992",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "c26d7a5d-390e-4bfe-8d0b-dfa2aa66277b",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "f6ef9256-e119-4708-81c7-997c080586d1",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "c26d7a5d-390e-4bfe-8d0b-dfa2aa66277b",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "c1020ff8-b143-484c-b1e4-a30dbe7ee9d3",
+                        "port_number": 1
+                    }
+                ]
+            },
+            {
+                "link_id": "bac00468-883e-4474-b587-e5166ebfa224",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "node_id": "a8022702-2ba0-4b5e-9623-c4060636c314",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "node_id": "c1020ff8-b143-484c-b1e4-a30dbe7ee9d3",
+                        "port_number": 0
+                    }
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "local",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 17,
+                    "y": -25
+                },
+                "name": "R1",
+                "node_id": "a8022702-2ba0-4b5e-9623-c4060636c314",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 1,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60bea79c",
+                    "idlesleep": 30,
+                    "image": "c3745-adventerprisek.124-25d 2.image",
+                    "image_md5sum": "91865278df89fc0afc8093b060e27405",
+                    "iomem": 5,
+                    "mac_addr": "c401.1f50.0000",
+                    "mmap": true,
+                    "nvram": 256,
+                    "platform": "c3745",
+                    "ram": 256,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-16ESW",
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY"
+                },
+                "symbol": ":/symbols/router.svg",
+                "x": -375,
+                "y": -170,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5001,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R2",
+                    "x": 17,
+                    "y": -25
+                },
+                "name": "R2",
+                "node_id": "c10a2ab7-92b3-446f-be15-346bd9eb7992",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 2,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60bea79c",
+                    "idlesleep": 30,
+                    "image": "c3745-adventerprisek.124-25d 2.image",
+                    "image_md5sum": "91865278df89fc0afc8093b060e27405",
+                    "iomem": 5,
+                    "mac_addr": "c402.0790.0000",
+                    "mmap": true,
+                    "nvram": 256,
+                    "platform": "c3745",
+                    "ram": 256,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-16ESW",
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY"
+                },
+                "symbol": ":/symbols/router.svg",
+                "x": -15,
+                "y": -151,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5002,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R3",
+                    "x": 17,
+                    "y": -25
+                },
+                "name": "R3",
+                "node_id": "c1020ff8-b143-484c-b1e4-a30dbe7ee9d3",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 3,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60bea79c",
+                    "idlesleep": 30,
+                    "image": "c3745-adventerprisek.124-25d 2.image",
+                    "image_md5sum": "91865278df89fc0afc8093b060e27405",
+                    "iomem": 5,
+                    "mac_addr": "c403.2704.0000",
+                    "mmap": true,
+                    "nvram": 256,
+                    "platform": "c3745",
+                    "ram": 256,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-16ESW",
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY"
+                },
+                "symbol": ":/symbols/router.svg",
+                "x": -367,
+                "y": 110,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5003,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R4",
+                    "x": 17,
+                    "y": -25
+                },
+                "name": "R4",
+                "node_id": "c26d7a5d-390e-4bfe-8d0b-dfa2aa66277b",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 4,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60bea79c",
+                    "idlesleep": 30,
+                    "image": "c3745-adventerprisek.124-25d 2.image",
+                    "image_md5sum": "91865278df89fc0afc8093b060e27405",
+                    "iomem": 5,
+                    "mac_addr": "c404.0b64.0000",
+                    "mmap": true,
+                    "nvram": 256,
+                    "platform": "c3745",
+                    "ram": 256,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-16ESW",
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY"
+                },
+                "symbol": ":/symbols/router.svg",
+                "x": 5,
+                "y": 115,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "2.1.4"
+}
